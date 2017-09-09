@@ -1,0 +1,165 @@
+/* Updated 9/9/2017 12:55PM */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Libre Baskerville', serif;
+	background: #fafafa;
+}
+
+h1, h2, h3, h4, nav {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+li img {
+	width: 285px;
+}
+
+nav li {
+	text-transform: uppercase;
+}
+
+ul {
+	padding: 0;
+	text-align: center;
+}
+
+
+/* =====================
+	Navigation
+======================== */
+
+
+.name {
+	font-size: 1.25em;
+}
+
+.name a,
+.main-nav li {
+	background: #fff;
+	background-color: unset;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	text-align: center;
+}
+
+.name a,
+.main-nav a {
+	color: #2F4F4F;
+	display: block;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+}
+
+	.main-nav a {
+		font-size: .95em;
+		text-transform: uppercase;
+	}
+	
+	.name a:hover,
+	.main-nav a:hover {
+		color: #808080;
+	}
+
+
+
+/* =====================
+	Columns 
+======================= */
+
+
+.col {
+	float: left;
+	padding-left: 1em;
+	padding-right: 1em;
+	min-height: 250px;
+}
+
+.primary {
+	width: 50%;
+}
+
+.secondary {
+	width: 40%;
+}
+
+/* ======================
+		div css
+======================== */
+
+
+.portfolio {
+	clear: both;
+	background: white;
+}
+
+
+/* ==================================
+	This applies from 600px onwards
+===================================== */
+
+@media (min-width: 600px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+ 
+	.container {
+  		width: 95%;
+		max-width: 768px;
+		margin: 0 auto;
+	}
+
+	/* -------------- */
+
+	.feat-img {
+		float: right;
+		padding: 0;
+	}
+
+	.name a {
+		padding-left: 1em;
+	}
+
+	.main-nav {
+		float: right;
+		/*padding-right: 1em;*/
+	}
+
+	.name,
+	.main-nav li {
+		float: left;
+	}
+
+	.main-nav li {
+		margin-left: 12px;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	.container {
+  		width: 95%;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+
+}
+
