@@ -48,6 +48,11 @@
 	flex-direction: column-reverse;
 }
 
+.item {
+	margin: 20px auto 25px auto;
+}
+
+
 /* =======================
 	Media Queries
 ========================= */

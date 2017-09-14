@@ -66,6 +66,7 @@ hr {
 	margin-top: 5px;
 }
 
+/* item is in footer */
 .name a,
 .main-nav a {
 	color: #2F4F4F;
@@ -142,6 +143,17 @@ hr {
 .bottom-links {
 	display: none;
 }
+
+.item a {
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.item a:hover {
+		color: #808080;
+	}
 
 /* ==================================
 	This applies from 320px onwards
