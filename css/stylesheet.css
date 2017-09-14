@@ -1,0 +1,193 @@
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #fafafa;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+h2 {
+	font-size: 14px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: normal;
+}
+
+li {
+	list-style: none;
+	display: block;
+}
+
+nav li {
+	text-transform: uppercase;
+}
+
+ul {
+	padding: 0;
+	text-align: center;
+}
+
+p {
+	color: #777;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.45;
+	margin: 0 auto;
+}
+
+hr {
+	width: 90%;
+}
+
+.container {
+	width: 100%;
+}
+
+
+/* =====================
+	Navigation
+======================== */
+
+.name {
+	font-size: 1.5em;
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+
+.main-nav li {
+	background: #fff;
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	color: #2F4F4F;
+	text-decoration: none; 
+}
+
+	.main-nav a {
+		background: #fff;
+		font-size: .95em;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	
+	.name a:hover,
+	.main-nav a:hover {
+		color: #808080;
+	}
+
+
+/* =====================
+	About Me
+======================= */
+
+.row {
+	padding-bottom: 40px;
+	flex: 1;
+}
+
+.col img {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+/* =====================
+	Portfolio 
+======================= */
+
+.portfolio {
+	background: #fff;
+}
+
+.flex-item p {
+	color: #333;
+	font-size: .9em;
+	line-height: 1.45;
+}
+
+.p-item {
+	width: 90%;
+}
+
+/* =====================
+	Contact
+======================= */
+
+.contact {
+	padding-bottom: 25px;
+}
+
+.p-contact {
+	width: 95%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.contact-info {
+	margin: 30px 0 10px 0;
+}
+
+/* =====================
+	Footer
+======================= */
+
+.bottom-links {
+	display: none;
+}
+
+/* ==================================
+	This applies from 320px onwards
+===================================== */
+
+@media (min-width: 320px) {
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.tagline {
+		font-size: 1.4em;
+	}
+
+}
+
+@media (min-width: 568px) {
+	.container {
+		max-width: 956px;
+		margin: 0 auto;
+	}
+
+	.col p {
+		text-align: left;
+	}
+
+	.return-link {
+		display: none;
+	}
+
+	.bottom-links {
+		display: unset;
+	}
+}
+
+@media (min-width: 956px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+}

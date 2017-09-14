@@ -1,0 +1,89 @@
+
+/* ======================
+	Flex Container
+======================== */
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-nav {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.flex-item {
+  padding: 5px;
+  width: 290px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.flex-item img {
+	width: 100%;
+}
+
+.col {
+	text-align: center;
+}
+
+.col img {
+	width: 75%;
+}
+
+.row-reverse {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/* =======================
+	Media Queries
+========================= */
+
+@media (min-width: 548px) {
+
+	.main-header,
+	.main-nav,
+	.row {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.row-reverse {
+		flex-direction: row;
+	}
+
+	.col {
+		flex: 1;
+	}
+
+}
+
+@media (min-width: 956px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.primary {
+		flex: 2;
+	}
+
+}

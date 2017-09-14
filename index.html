@@ -5,84 +5,83 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-	 <link rel="stylesheet" type="text/css" href="css/styles.css">
-	 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,700" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	 <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<title>Haley Bengtson</title>
 </head>
 
 <body>
 	<div class="wrap">
 
-		<header class="container main-header">
-			<div class="container clearfix">
-				<h1 class="name"><a href="index.html">Haley Bengtson</a></h1>
-				<nav>
-					<ul class="main-nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
+		<header class="main-header">
+			<h1 class="name"><a href="index.html">Haley Bengtson</a></h1>
+			<ul class="main-nav">
+				<li class="flex-nav"><a href="index.html">Home</a></li>
+				<li class="flex-nav"><a href="portfolio.html">Portfolio</a></li>
+				<li class="flex-nav"><a href="contact.html">Contact</a></li>
+			</ul>
 		</header>
 
 		<div class="container clearfix">
 
 			<section>
-				<div class="container">
-				<div class="primary col">
-					<p>Hi! I'm a font-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
-				</div>
-				<div class="secondary col">
-					<img class="feat-img" src="images/responsive-layout-profile.png" alt="Haley Bengtson's Profile Picture" />
-				</div>
+				<div class="container row row-reverse">
+					<div class="primary col">
+						<p>Hi! I'm a font-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
+					</div>
+					<div class="secondary col">
+						<img class="feat-img" src="images/responsive-layout-profile.png" alt="Haley Bengtson's Profile Picture" />
+					</div>
 				</div>
 			</section>
 
 			<section>
-				<div class="portfolio">
+				<div class="portfolio container">
 					<h2>Portfolio</h2>
-					<ul>
-						<li>
+					<ul class="flex-container">
+						<li class="flex-item">
 							<img src="images/portfolio-1.png" alt="Marketing Page" />
-							<h3>Text Here</h3>
-							<p>Description</p>
+							<h3>Marketing Page</h3>
+							<p class="p-item">This project shows the front page of a marketing website meant for a specific business I'm intereseted in.</p>
 						</li>
-						<li>
+						<li class="flex-item">
 							<img src="images/portfolio-2.png" alt="Search Page" />
-							<h3>Text Here</h3>
-							<p>Description</p>
+							<h3>Search Page</h3>
+							<p class="p-item">This project searched through a specific database to find information that the use is trying to look up.</p>
 						</li>
-						<li>
+						<li class="flex-item">
 							<img src="images/portfolio-3.png" alt="Travel App" />
-							<h3>Text Here</h3>
-							<p>Description</p>
+							<h3>Travel App</h3>
+							<p class="p-item">This project compares travel times based on different transportation methods and tells you the best one.</p>
 						</li>
-						<li>
+						<li class="flex-item">
 							<img src="images/portfolio-4.png" alt="Map of Favorite Spots" />
-							<h3>Text Here</h3>
-							<p>Description</p>
+							<h3>Map of Favorite Spots</h3>
+							<p class="p-item">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
 						</li>
-						<li>
+						<li class="flex-item">
 							<img src="images/portfolio-5.png" alt="Photo Gallery" />
-							<h3>Text Here</h3>
-							<p>Description</p>
+							<h3>Photo Gallery</h3>
+							<p class="p-item">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
 						</li>
-						<li>
+						<li class="flex-item">
 							<img src="images/portfolio-6.png" alt="Calculator" />
-							<h3>Text Here</h3>
-							<p>Description</p>
+							<h3>Calculator</h3>
+							<p class="p-item">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 						</li>
 					</ul>
 				</div>
 			</section>
 
 			<section>
-				<div class="container">
+				<div class="contact">
 					<h2>Contact</h2>
-					<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-					<p>Phone:</p><span>+1 (555) 555-1234</span>
-					<p>Email:</p><span>hnbvt24@vt.edu</span>
+					<p class="p-contact">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+					<div class="contact-info">
+						<p class="p-contact">Phone &nbsp;&nbsp;<b>+1 (111) 555-1234</b></p>
+						<p class="p-contact">Email &nbsp;&nbsp;<b>email@yoursite.com</b></p>
+					</div>
 				</div>
 			</section>
 
@@ -91,14 +90,18 @@
 	</div> <!-- wrap -->
 
 	<footer>
-		<h4><small>Haley Bengtson</small></h4>
-		<nav>
-			<ul>
+		<hr>
+		<div class="bottom-nav">
+			<h4><small>Haley Bengtson</small></h4>
+			<ul class="bottom-links">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
-		</nav>
+			<div class="return-link">
+				<a href="#top">Back to top</a>
+			</div>
+		</div>
 	</footer>
 
 </body>
