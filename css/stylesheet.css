@@ -42,6 +42,10 @@ p {
 	margin: 0 auto;
 }
 
+.wrap {
+	min-height: calc(100vh - 89px);
+}
+
 .container {
 	width: 100%;
 }
@@ -80,6 +84,16 @@ p {
 	.main-nav a:hover {
 		color: #808080;
 	}
+
+.main-header,
+.row {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.tagline {
+	font-size: 1.4em;
+}
 
 
 /* =====================
@@ -166,24 +180,7 @@ h4 {
 	This applies from 320px onwards
 ===================================== */
 
-@media (min-width: 320px) {
-	.wrap {
-		min-height: calc(100vh - 89px);
-	}
-
-	.main-header,
-	.row {
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	.tagline {
-		font-size: 1.4em;
-	}
-
-}
-
-@media (min-width: 568px) {
+@media (min-width: 768px) {
 
 	.main-header {
 		margin-top: 30px;
@@ -202,7 +199,6 @@ h4 {
 	}
 
 	.container {
-		/*max-width: 956px*/;
 		margin: 40px auto;
 	}
 
@@ -228,13 +224,13 @@ h4 {
 
 }
 
-@media (min-width: 956px) {
+@media (min-width: 1024px) {
 	.main-header,
 	.row,
 	.portfolio,
 	footer {
 		width: 92%;
-		max-width: 1024px;
+/* 		max-width: 1024px; */
 	}
 
 	.main-header {
