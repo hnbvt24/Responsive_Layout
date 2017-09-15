@@ -225,17 +225,15 @@ h4 {
 }
 
 @media (min-width: 1024px) {
-	.main-header,
-	.row,
 	.portfolio,
 	footer {
 		width: 92%;
 /* 		max-width: 1024px; */
 	}
 
-	.main-header {
-		width: 92%;
-
+	.main-header,
+	.row {
+		width: 86%;
 	}
 
 	.p-item {
@@ -244,6 +242,10 @@ h4 {
 
 	.col p {
 		padding-right: 30px;
+	}
+
+	.secondary {
+
 	}
 
 	.contact p {

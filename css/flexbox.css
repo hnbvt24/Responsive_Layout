@@ -64,7 +64,7 @@
 	Media Queries
 ========================= */
 
-@media (min-width: 568px) {
+@media (min-width: 768px) {
 
 	.main-header,
 	.main-nav,
@@ -124,7 +124,7 @@
 
 }
 
-@media (min-width: 956px) {
+@media (min-width: 1024px) {
 
 	.main-header {
 		flex-direction: row;
