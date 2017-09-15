@@ -42,10 +42,6 @@ p {
 	margin: 0 auto;
 }
 
-hr {
-	width: 90%;
-}
-
 .container {
 	width: 100%;
 }
@@ -75,7 +71,7 @@ hr {
 
 	.main-nav a {
 		background: #fff;
-		font-size: .95em;
+		font-size: .9em;
 		text-transform: uppercase;
 		font-weight: bold;
 	}
@@ -123,13 +119,12 @@ hr {
 ======================= */
 
 .contact {
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 }
 
 .p-contact {
 	width: 95%;
 	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 .contact-info {
@@ -140,15 +135,27 @@ hr {
 	Footer
 ======================= */
 
+footer {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
 .bottom-links {
 	display: none;
 }
 
+h4 {
+	font-size: .85em;
+}
+
 .item a {
 	color: #333;
+	font-size: .8em;
+	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: bold;
+	padding-left: 30px;
 }
 
 .item a:hover {
@@ -177,29 +184,80 @@ hr {
 }
 
 @media (min-width: 568px) {
+
+	.main-header {
+		margin-top: 30px;
+	}
+
+	.name {
+		margin: 0;
+	}
+
+	.main-nav li, .main-nav a {
+		background: none;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
 	.container {
-		max-width: 956px;
-		margin: 0 auto;
+		/*max-width: 956px*/;
+		margin: 40px auto;
+	}
+
+	.row {
+		padding-bottom: 0;
+	}
+
+	.p-item {
+		width: 78%;
 	}
 
 	.col p {
 		text-align: left;
 	}
 
-	.return-link {
-		display: none;
+	.col img {
+		margin: 0;
 	}
 
-	.bottom-links {
-		display: unset;
+	.contact p {
+		width: 75%;
 	}
+
 }
 
 @media (min-width: 956px) {
 	.main-header,
-	.row {
-		width: 80%;
-		max-width: 1150px;
+	.row,
+	.portfolio,
+	footer {
+		width: 92%;
+		max-width: 1024px;
+	}
+
+	.main-header {
+		width: 92%;
+
+	}
+
+	.p-item {
+		width: 95%;
+	}
+
+	.col p {
+		padding-right: 30px;
+	}
+
+	.contact p {
+		width: 60%;
+	}
+
+	.container {
+		margin: 0 auto;
+		padding-top: 15px;
+		padding-bottom: 40px;
 	}
 
 }
